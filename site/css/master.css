@@ -118,7 +118,7 @@ aside{
   height:500px;
   position: sticky;
   top:0;
-  background: green;
+  /* background: green; */
 }
 .entireCommunity{
   display:flex;
