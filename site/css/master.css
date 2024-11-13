@@ -256,4 +256,10 @@ footer{
   max-width: var(--MaxWidth);
   min-height: 230px;
   background:#263238;
+  color:white;
+  text-shadow: 1px 1px black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
 }
