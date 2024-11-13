@@ -206,3 +206,54 @@ aside{
   /* max-width:177px; */
   min-height: 43px;
 }
+.caring{
+  width:100%;
+  max-width:var(--MaxWidth);
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.caring > h2{
+  width:100%;
+  text-align: center;
+}
+.caring > p{
+  width:100%;
+}
+.boxCaring{
+  min-height: 255px;
+  max-width:257px;
+  display:flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.boxCaring > div{
+  width:100%;
+  max-width: 220px;
+  min-height: 123px;
+  display:flex;
+  position: relative;
+  border-radius: 17px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  bottom:55px;
+  background: white;
+}
+.boxCaring > div > p{
+  margin:3%;
+  font-size: 17px;
+}
+.boxCaring > div > button{
+  width:100%;
+  max-width:198px;
+  color: var(--stableColor);
+}
+footer{
+  width:100%;
+  max-width: var(--MaxWidth);
+  min-height: 230px;
+  background:#263238;
+}
