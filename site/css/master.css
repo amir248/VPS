@@ -126,6 +126,7 @@ article{
   width:100%;
   max-width:var(--MaxWidthFull);
   font-size: 20px;
+  flex-wrap:wrap;
 }
 article > section{
   width:100%;
@@ -329,4 +330,46 @@ footer{
 .openMenu > h3{
   margin-top:15px;
   margin-bottom:33px;
+}
+
+.cloud{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  max-width:var(--MaxWidthFull);
+  flex-wrap:wrap;
+}
+.cloud > div{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:100%;
+  max-width:170px;
+  min-height:330px;
+  flex-direction:column;
+  border:3px solid #4CAF4F;
+  border-radius:7px;
+  margin-right:3%;
+  margin-bottom:3%;
+}
+.cloud > div > strong{
+  background-color: #4CAF4F;
+  color:white;
+  text-shadow:black 1px 1px;
+  width:100%;
+  text-align:center;
+}
+.cloud > div > p:nth-child(3){
+  background-color: rgb(252, 117, 117);
+  width:100%;
+  text-align:center;
+  color:white;
+  text-shadow:black 1px 1px;
+}
+.cloud > div:nth-child(2) > p:nth-child(3){
+  background-color: rgb(252, 238, 117);
+}
+.cloud > div:nth-child(3) > p:nth-child(3){
+  background-color: rgb(117, 252, 157);
 }
