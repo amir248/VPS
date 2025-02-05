@@ -2,7 +2,7 @@ const langSmall=document.createElement('label');
 langSmall.innerHTML=`
                   <legend>Language</legend>
                   <input type="checkbox" id="languageSmall" checked="">
-                  <span>Rus</span>
+                  <span>Eng</span>
                 `;
 document.querySelector('.logo').insertAdjacentElement('afterend',langSmall);
 console.log(document.querySelectorAll('#eng').length);
