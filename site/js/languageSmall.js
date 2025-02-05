@@ -2,7 +2,7 @@ const langSmall=document.createElement('label');
 langSmall.innerHTML=`
                   <legend>Language</legend>
                   <input type="checkbox" id="languageSmall" checked="">
-                  <span>Eng</span>
+                  <span id=langU>Eng</span>
                 `;
 document.querySelector('.logo').insertAdjacentElement('afterend',langSmall);
 console.log(document.querySelectorAll('#eng').length);
@@ -15,6 +15,7 @@ function changeLanguage(){
             document.querySelectorAll('#eng')[i].style.display="none";
             document.querySelectorAll('#rus')[i].style.display="";  
         }
+        langU.innerHTML='Change on Eng';
     }else if(document.querySelector('#languageSmall').checked==false){
         console.log('chiecek False');
 
@@ -22,6 +23,7 @@ function changeLanguage(){
             document.querySelectorAll('#eng')[i].style.display="";
             document.querySelectorAll('#rus')[i].style.display="none";  
         }
+        langU.innerHTML='Change on Rus';
     }else{
         console.log('else')
     }
