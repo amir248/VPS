@@ -94,7 +94,7 @@ header > section{
   background: #C8E6C9;
   flex-wrap: wrap;
 }
-header > section > div > p{
+header > section > div > h1{
   font-size: 30px;
   color:white;
   text-shadow: 1px 1px black;
@@ -220,6 +220,7 @@ body > main > article > aside{
   justify-content: space-around;
   align-items: center;
   width:100%;
+  overflow: hidden;
   max-width:var(--MaxWidthFull);
 }
 .helping > div > h3 > span{

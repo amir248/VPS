@@ -11,6 +11,16 @@ function firstAllOk(){
         },999);
     });
 };//firstAllOk
+function language(){
+    return new Promise((resolve)=>{
+        function lang(){
+            let lan=document.createElement('script');
+            lan.src="site/js/language.js";
+            document.querySelector('main').append(lan);
+        }
+        resolve(lang());
+    })
+}
 function second(){
     return new Promise((resolve)=>{
         function okAllGreat(){
@@ -34,9 +44,9 @@ function menuOk(){
 
 window.addEventListener('DOMContentLoaded',mainFunction);
 async function mainFunction(){
+    await language();
     await firstAllOk();
     await second();
     await menuOk();
 //  await 
 }
-console.log('second console.llog!!!');

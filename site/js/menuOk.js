@@ -9,7 +9,7 @@ function openMenuFunc(){
     menuSh.classList.add('openMenu');
     
     menuSh.setAttribute('id','menuSh');
-    menuSh.innerHTML=`<h3><a href="#oK"> oK</a></h3><h3><a href="tel:+77004145901"> tel:+77004145901</a></h3>`;
+    menuSh.innerHTML=`<h3><a href="#oK"> oK</a></h3><h3><a href="tel:+77004145901"> tel:+77004145901</a></h3><label><fieldset><legend>Language</legend><input type="checkbox" id="languageSmall" checked><span>Rus</span></fieldset></label>`;
     document.querySelector('body').prepend(menuSh);
     document.querySelector('body').style.overflow="hidden";
     setTimeout(()=>{
@@ -27,11 +27,11 @@ function closeMenu(){
     document.querySelector('#menuSh').addEventListener('click',()=>{
         document.querySelector('.openMenu').style.cssText=`
         fotn-size:0;
-            height:0;
-            bottom:0;
-            top:100vh;
-            opacity:0;
-            transition:all ease-out 1s;
+        height:0;
+        bottom:0;
+        top:100vh;
+        opacity:0;
+        transition:all ease-out 1s;
         `;
     document.querySelector('body').style.overflow="auto";
     setTimeout(()=>{
