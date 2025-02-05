@@ -3,13 +3,14 @@ stateOfSite.countClick=+0;
 
 document.querySelector('#menuOpen').addEventListener('click',openMenuFunc);
 function openMenuFunc(){
+
     // console.log('o_O');
     const menuSh=document.createElement('div');
     // menuSh.style.cssText=`top:0;height:0;`;
     menuSh.classList.add('openMenu');
     
     menuSh.setAttribute('id','menuSh');
-    menuSh.innerHTML=`<h3><a href="#oK"> oK</a></h3><h3><a href="tel:+77004145901"> tel:+77004145901</a></h3><label><fieldset><legend>Language</legend><input type="checkbox" id="languageSmall" checked><span>Rus</span></fieldset></label>`;
+    menuSh.innerHTML=`<h3><a href="#oK"> oK</a></h3><h3><a href="tel:+77004145901"> tel:+77004145901</a></h3><label>`;
     document.querySelector('body').prepend(menuSh);
     document.querySelector('body').style.overflow="hidden";
     setTimeout(()=>{
@@ -20,6 +21,7 @@ function openMenuFunc(){
             transition:all ease-out 1s;
       `;
     },100);
+
     closeMenu();
 };
 
@@ -36,7 +38,7 @@ function closeMenu(){
     document.querySelector('body').style.overflow="auto";
     setTimeout(()=>{
             document.querySelector('#menuSh').remove();
-        },700);
+        },1700);
         console.log('close');
     }
     );

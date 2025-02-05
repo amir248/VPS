@@ -77,6 +77,14 @@ body > main > header > nav > ul > li > a:hover{
     margin-top:7px;
     margin-bottom:7px;
   }
+  #languageSmall{
+    display:none;
+  }
+}
+@media(min-width:700px){
+  #languageSmall{
+    display:block;
+  }
 }
 header > nav > span{
   display:none;

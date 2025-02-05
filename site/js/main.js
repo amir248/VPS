@@ -21,6 +21,16 @@ function language(){
         resolve(lang());
     })
 }
+function languageSmall(){
+    return new Promise((resolve)=>{
+        function langs(){
+            let lans=document.createElement('script');
+            lans.src="site/js/languageSmall.js";
+            document.querySelector('main').append(lans);
+        }
+        resolve(langs());
+    })
+}
 function second(){
     return new Promise((resolve)=>{
         function okAllGreat(){
@@ -44,9 +54,10 @@ function menuOk(){
 
 window.addEventListener('DOMContentLoaded',mainFunction);
 async function mainFunction(){
+    if(window.innerWidth<700){ await languageSmall()};
+    await menuOk();
     await language();
     await firstAllOk();
     await second();
-    await menuOk();
 //  await 
 }
