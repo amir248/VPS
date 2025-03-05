@@ -10,7 +10,7 @@ function openMenuFunc(){
     menuSh.classList.add('openMenu');
     
     menuSh.setAttribute('id','menuSh');
-    menuSh.innerHTML=`<h3><a href="#oK"> oK</a></h3><h3><a href="tel:+77004145901"> tel:+77004145901</a></h3><label>`;
+    menuSh.innerHTML=`<h3><a href="#oK"> oK</a></h3><h3><a href="/ubuntuOrDebian"> Ubuntu or Debian</a></h3><h3><a href="tel:+77004145901"> tel:+77004145901</a></h3><label>`;
     document.querySelector('body').prepend(menuSh);
     document.querySelector('body').style.overflow="hidden";
     setTimeout(()=>{

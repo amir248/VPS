@@ -44,10 +44,10 @@ function second(){
 function menuOk(){
     return new Promise((resolve)=>{
        function openMenuAndClose(){
-        const menu=document.createElement('script');
-        menu.src="site/js/menuOk.js";
-        document.querySelector('main').append(menu);
-    }
+            const menu=document.createElement('script');
+            menu.src="site/js/menuOk.js";
+            document.querySelector('main').append(menu);
+        }
         resolve(openMenuAndClose());
     });
 }
